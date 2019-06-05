@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip3 install -U jupyter pandas scikit-learn matplotlib seaborn
+  - pip3 install -U git+https://github.com/data-8/Gofer-Grader
+
+script:
+  - jupyter nbconvert --to markdown --execute final_2019_student.ipynb
+  - python3 compute_grade.py final_2019_student.md
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
