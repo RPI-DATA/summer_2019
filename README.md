@@ -2,6 +2,10 @@
 
 The goal of this is to provide an autograding example which integrates OKPY and submitty.
 
+## Requirements 
+Install gopher grader
+`pip install git+https://github.com/data-8/Gofer-Grader`
+
 A foundational component is a standard docker container which can be used for both running the assignment and checking the assignment.
 
 This example comes from the [binder-examples](https://github.com/binder-examples/jupyter-stacks) repository.
