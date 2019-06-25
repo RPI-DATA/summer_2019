@@ -9,10 +9,10 @@ test = {
           >>> # Hint 1: Try to make the word "bookkeeper"!
           >>> # 
           >>> # Hint 2: After writing this:
-          >>> #   you = 'keep'
+          >>> #   settings.you = 'keep'
           >>> # the value of the variable named 'the' will be
           >>> #   'beekeeper'
-          >>> 'beeper'.replace('p', you).replace('bee', this)[::-1]
+          >>> 'beeper'.replace('p', settings.you).replace('bee', settings.this)[::-1]
           'repeekkoob'
           """,
           'hidden': False,
