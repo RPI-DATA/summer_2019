@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> new_year
+          >>> settings.new_year
           2018
           """,
           'hidden': False,

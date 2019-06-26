@@ -1,15 +1,13 @@
 test = {
-  'name': 'Question',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> settings.woman_asking
-          'The woman asked:'
-          >>> settings.gagarin_quote
-          '"As a matter of fact, I have!"'
+          >>> all(powers_of_2 == 2 ** np.arange(30))
+          True
           """,
           'hidden': False,
           'locked': False

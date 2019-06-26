@@ -6,10 +6,10 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> settings.woman_asking
-          'The woman asked:'
-          >>> settings.gagarin_quote
-          '"As a matter of fact, I have!"'
+          >>> len(separator)
+          0
+          >>> hello == 'Hello, world!'
+          True
           """,
           'hidden': False,
           'locked': False

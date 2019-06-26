@@ -6,9 +6,9 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> settings.woman_asking
+          >>> woman_asking
           'The woman asked:'
-          >>> settings.gagarin_quote
+          >>> gagarin_quote
           '"As a matter of fact, I have!"'
           """,
           'hidden': False,
