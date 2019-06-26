@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import os
 import lxml
+import settings
 
 
 def grade(name, points_per_test, comments, ok):
