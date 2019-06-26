@@ -5,6 +5,10 @@ The goal of this is to provide an autograding example which integrates OKPY and 
 ## Requirements 
 Install gopher grader
 `pip install git+https://github.com/data-8/Gofer-Grader`
+`pip install beautifulsoup4`
+`pip install lxml`
+`pip install matplotlib`
+`pip install ipython`
 
 A foundational component is a standard docker container which can be used for both running the assignment and checking the assignment.
 
