@@ -147,14 +147,14 @@ _ = ok.grade('q211')
 
 # In[30]:
 
-
-get_ipython().system('pip install matplotlib')
+import os
+os.system('pip install matplotlib')
 
 
 # In[31]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+#os.run_line_magic('matplotlib', 'inline')
 
 
 # In[32]:
