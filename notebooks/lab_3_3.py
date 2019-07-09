@@ -3,7 +3,7 @@
 
 # Initialize the OK tests to get started.
 
-# In[4]:
+# In[1]:
 
 
 from client.api.notebook import Notebook
@@ -11,21 +11,32 @@ ok = Notebook('lab02.ok')
 _ = ok.auth(inline=True)
 
 
+# In[2]:
+
+
+import settings
+
+
 # **Submission**: This should be submitted in PDF format with Homework 2.  
 
-# In[6]:
+# In[3]:
 
 
 a=5*13*31+2
 b=2**5-2**11-2**1
 b=2018
-new_year = max(a,b)
-new_year
+settings.new_year = max(a,b)
+
+
+# In[4]:
+
+
+settings.new_year
 
 
 # Check your work by executing the next cell.
 
-# In[7]:
+# In[5]:
 
 
 _ = ok.grade('q11')
@@ -38,19 +49,19 @@ _ = ok.grade('q11')
 # 
 # The cell below contains unfinished code.  Fill in the `...`s so that it prints out this conversation *exactly* as it appears above.
 
-# In[8]:
+# In[12]:
 
 
-woman_asking = "The woman asked:"
+settings.woman_asking = "The woman asked:"
 woman_quote = '"Can it be that you have come from outer space?"'
 gagarin_reply = 'Gagarin replied:'
-gagarin_quote = '"As a matter of fact, I have!"'
+settings.gagarin_quote = '"As a matter of fact, I have!"'
 
-print(woman_asking, woman_quote)
-print(gagarin_reply, gagarin_quote)
+print(settings.woman_asking, woman_quote)
+print(gagarin_reply, settings.gagarin_quote)
 
 
-# In[9]:
+# In[13]:
 
 
 _ = ok.grade('q21')
@@ -66,14 +77,14 @@ _ = ok.grade('q21')
 # 
 # Try to predict the output of these examples, then execute them.
 
-# In[11]:
+# In[14]:
 
 
 # Replace one letter
 'Hello'.replace('o', 'a')
 
 
-# In[12]:
+# In[15]:
 
 
 # Replace a sequence of letters, which appears twice
@@ -82,7 +93,7 @@ _ = ok.grade('q21')
 
 # Once a name is bound to a string value, methods can be invoked on that name as well. The name is still bound to the original string, so a new name is needed to capture the result. 
 
-# In[13]:
+# In[16]:
 
 
 sharp = 'edged'
@@ -97,7 +108,7 @@ print('hot:', hot)
 # 
 # has value 5.  Similarly, you can invoke methods on the results of other method (or function) calls.
 
-# In[14]:
+# In[17]:
 
 
 # Calling replace on the output of another call to
@@ -117,36 +128,52 @@ print('hot:', hot)
 # 
 # *Hint 2:* Run the tests if you're stuck.  They'll often give you help.
 
-# In[9]:
+# In[28]:
 
 
-you = "kkeep"
-this = "boo"
+settings.you = "kkeep"
+settings.this = "boo"
 a = 'beeper'
-the = a.replace('p', you) 
-the.replace('bee', this)
+the = a.replace('p', settings.you) 
+the.replace('bee', settings.this)
 #repeekkoob
 
 
-# In[10]:
+# In[29]:
 
 
 _ = ok.grade('q211')
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
+
+# In[30]:
+
+
+get_ipython().system('pip install matplotlib')
+
+
+# In[31]:
+
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+
+# In[32]:
+
+
+settings.init()
 import grade
+import importlib
+importlib.reload(grade)
+ok = Notebook('lab02.ok')
+_ = ok.auth(inline=True)
 
-# import importlib
-# importlib.reload(grade)
-ok = Notebook('final.ok')
-name = "test"
-points_per_test = 2.5
-comments = ""
-
-# In[15]:
-
+name="test2_3"
+points_per_test=2.5
+comments=""
 
 grade.grade(name, points_per_test, comments, ok)
+
+
 # In[ ]:
 
 
