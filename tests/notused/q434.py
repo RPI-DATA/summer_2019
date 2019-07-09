@@ -1,15 +1,13 @@
 test = {
-  'name': 'Question',
+  'name': '',
   'points': 1,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> settings.woman_asking
-          'The woman asked:'
-          >>> settings.gagarin_quote
-          '"As a matter of fact, I have!"'
+          >>> round(sum_of_bills, 2) == 1795730.06
+          True
           """,
           'hidden': False,
           'locked': False

@@ -6,10 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> settings.woman_asking
-          'The woman asked:'
-          >>> settings.gagarin_quote
-          '"As a matter of fact, I have!"'
+          >>> round(near_twenty, 8)
+          19.99909998
           """,
           'hidden': False,
           'locked': False
