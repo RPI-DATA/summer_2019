@@ -14,6 +14,10 @@ Install gopher grader
 
 `pip install ipython`
 
+Convert Jupyter notebooks into python file
+
+`jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb`
+
 A foundational component is a standard docker container which can be used for both running the assignment and checking the assignment.
 
 This example comes from the [binder-examples](https://github.com/binder-examples/jupyter-stacks) repository.
