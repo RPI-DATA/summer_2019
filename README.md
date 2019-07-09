@@ -6,6 +6,18 @@ The goal of this is to provide an autograding example which integrates OKPY and 
 Install gopher grader
 `pip install git+https://github.com/data-8/Gofer-Grader`
 
+`pip install beautifulsoup4`
+
+`pip install lxml`
+
+`pip install matplotlib`
+
+`pip install ipython`
+
+Convert Jupyter notebooks into python file
+
+`jupyter nbconvert --to script [YOUR_NOTEBOOK].ipynb`
+
 A foundational component is a standard docker container which can be used for both running the assignment and checking the assignment.
 
 This example comes from the [binder-examples](https://github.com/binder-examples/jupyter-stacks) repository.
